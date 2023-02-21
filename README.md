@@ -1,2 +1,2 @@
 # xpandh-lab
-XPanDH Laboratory FHIR IG
+XPanDH Project Laboratory FHIR IG
