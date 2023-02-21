@@ -34,8 +34,8 @@ Instance: Inline-Composition-hepatitis-panel
 InstanceOf: Composition
 Usage: #inline
 * id = "4028a0b8-37fc-4491-a8e7-0f28e6fc59b4"
-* extension[+].url = $composition-diagnostic-report-reference
-* extension[=].valueReference = Reference(DiagnosticReport/3a743273-237a-446a-a8da-9e7521cce614)
+/* * extension[+].url = $composition-diagnostic-report-reference
+* extension[=].valueReference = Reference(DiagnosticReport/3a743273-237a-446a-a8da-9e7521cce614) */
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:3f69e0a5-2177-4540-baab-7a5d0877428f"
 * status = #final
@@ -87,7 +87,7 @@ Usage: #inline
 * extension[+].url = $diagnostic-report-composition-r5
 * extension[=].valueReference = Reference(Composition/4028a0b8-37fc-4491-a8e7-0f28e6fc59b4)
 * status = #final
-* category = $diagnostic-service-sections#MB "Microbiology"
+* category = $v2-0074#MB "Microbiology"
 * code = LaboratoryLocalCS#3002989 "Hepatitis Panel, Acute with Reflex to HBsAg Confirmation and Reflex to HCV by Quantitative NAAT"
 * code.text = "Acute Hepatitis Panel, reflex to confirmation"
 * subject = Reference(Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5)
@@ -110,7 +110,7 @@ Usage: #inline
 * id = "2c72163e-b741-44a3-aff7-c52f17f7a1ba"
 * status = #final
 * category[+] = $observation-category#laboratory
-* category[+] = $diagnostic-service-sections#MB "Microbiology"
+* category[+] = $v2-0074#MB "Microbiology"
 * code = LaboratoryLocalCS#3002989 "Hepatitis Panel, Acute with Reflex to HBsAg Confirmation and Reflex to HCV by Quantitative NAAT"
 * code.text = "Acute Hepatitis Panel, reflex to confirmation"
 * subject = Reference(Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5)
@@ -128,7 +128,7 @@ Usage: #inline
 * id = "104a5829-565b-46a6-85d6-36751ef79a40"
 * status = #final
 * category[+] = $observation-category#laboratory
-* category[+] = $diagnostic-service-sections#MB "Microbiology"
+* category[+] = $v2-0074#MB "Microbiology"
 * code.coding[+] = LaboratoryLocalCS#0020089 "Hepatitis B Surface Antigen"
 * code.coding[+] = $loinc#5196-1 "Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay"
 * code.text = "Hepatitis B Surface Antigen"
@@ -147,7 +147,7 @@ Usage: #inline
 * id = "01b8ec35-9b20-45a4-bd41-42eeae2fd521"
 * status = #final
 * category[+] = $observation-category#laboratory
-* category[+] = $diagnostic-service-sections#MB "Microbiology"
+* category[+] = $v2-0074#MB "Microbiology"
 * code.coding[+] = LaboratoryLocalCS#0020092 "Hepatitis B Core Antibody, IgM"
 * code.coding[+] = $loinc#24113-3 "Hepatitis B virus core IgM Ab [Presence] in Serum or Plasma by Immunoassay"
 * code.text = "Hepatitis B Core Antibody, IgM"
@@ -166,7 +166,7 @@ Usage: #inline
 * id = "096e27da-0768-47e4-b33c-9f1be93e1f88"
 * status = #final
 * category[+] = $observation-category#laboratory
-* category[+] = $diagnostic-service-sections#MB "Microbiology"
+* category[+] = $v2-0074#MB "Microbiology"
 * code.coding[+] = LaboratoryLocalCS#0020093 "Hepatitis A Antibody, IgM"
 * code.coding[+] = $loinc#13950-1 "Hepatitis A virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
 * code.text = "Hepatitis A Antibody, IgM"
@@ -185,7 +185,7 @@ Usage: #inline
 * id = "861e7b48-5497-410a-bed8-2cde814e09fc"
 * status = #final
 * category[+] = $observation-category#laboratory
-* category[+] = $diagnostic-service-sections#MB "Microbiology"
+* category[+] = $v2-0074#MB "Microbiology"
 * code.coding[+] = LaboratoryLocalCS#3003128 "Hepatitis C Antibody by CIA Interp"
 * code.coding[+] = $loinc#13955-0 "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
 * code.text = "Hepatitis C Antibody by CIA Interp"
@@ -204,7 +204,7 @@ Usage: #inline
 * id = "cc96d499-3e0e-4588-a021-4fe576766112"
 * status = #final
 * category[+] = $observation-category#laboratory
-* category[+] = $diagnostic-service-sections#MB "Microbiology"
+* category[+] = $v2-0074#MB "Microbiology"
 * code.coding[+] = LaboratoryLocalCS#2002404 "Hepatitis C Antibody by CIA Index"
 * code.coding[+] = $loinc#57006-9 "Hepatitis C virus IgG Ab [Units/volume] in Serum by Immunoassay"
 * code.text = "Hepatitis C Antibody by CIA Index"

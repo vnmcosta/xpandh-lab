@@ -16,12 +16,16 @@ Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum =  http://unitsofmeasure.org
+
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
+
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
-Alias: $diagnostic-service-sections = http://terminology.hl7.org/CodeSystem/v2-0074
+
 Alias: $obs-interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $reference-range-meaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 
@@ -33,20 +37,14 @@ Alias: $results-coded-values-laboratory-uv-ips = http://hl7.org/fhir/uv/ips/Valu
 
 
 // ---- Extensions
-Alias: $condition-related = http://hl7.org/fhir/StructureDefinition/condition-related
-Alias: $condition-assertedDate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
-Alias: $mcode-histology-morphology-behavior = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior
-Alias: $mcode-body-location-qualifier = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier
-Alias: $mcode-laterality-qualifier =  http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier
+
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
 Alias: $event-statusReason = http://hl7.org/fhir/StructureDefinition/event-statusReason
 Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
-Alias: $flag-detail = http://hl7.org/fhir/StructureDefinition/flag-detail
-Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority
-Alias: $composition-diagnostic-report-reference = http://hl7.eu/fhir/ig/xpandh/StructureDefinition/composition-DiagnosticReportReference
+// Alias: $composition-diagnostic-report-reference = http://hl7.eu/fhir/ig/xpandh/StructureDefinition/composition-DiagnosticReportReference
 Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
 
 // --- Profiles

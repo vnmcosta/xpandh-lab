@@ -73,8 +73,8 @@ Instance: Inline-Instance-for-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883-1
 InstanceOf: Composition
 Usage: #inline
 * id = "26032a57-083a-4ddf-b019-e566ae02f740"
-* extension[+].url = $composition-diagnostic-report-reference
-* extension[=].valueReference = Reference(DiagnosticReport/5679723c-4fae-4ba7-9f09-5438a827bfda)
+/* * extension[+].url = $composition-diagnostic-report-reference
+* extension[=].valueReference = Reference(DiagnosticReport/5679723c-4fae-4ba7-9f09-5438a827bfda) */
 * language = #it-IT
 * identifier.system = "urn:oid:2.16.840.1.113883.2.9.2.120.4.4"
 * identifier.value = "c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju"
@@ -475,7 +475,7 @@ Usage: #inline
 * extension[+].url = $diagnostic-report-composition-r5
 * extension[=].valueReference = Reference(Composition/26032a57-083a-4ddf-b019-e566ae02f740)
 * status = #registered
-* category = $diagnostic-service-sections#LAB "Laboratory"
+* category = $v2-0074#LAB "Laboratory"
 * code = http://loinc.org#14957-5 "Microalbumin [Mass/volume] in Urine"
 * code.text = "Microalbumin Massa/Volume in Urine"
 * subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)

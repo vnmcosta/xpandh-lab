@@ -13,9 +13,12 @@ Description: "Clinical document used to represent a Laboratory Report for the sc
 // or have text repeated here and in the sections ?
 * extension contains CompositionBasedOnOrderOrRequisition named basedOn-order-or-requisition 0..*
 * extension[basedOn-order-or-requisition].valueReference only Reference(ServiceRequestLabXpandh)
+
+/*
 * extension contains DiagnosticReportReference named diagnostic-report 1..1
-/* * extension[diagnostic-report].valueReference only Reference(DiagnosticReportLabXpandh)
-* extension[diagnostic-report].valueReference 1..1 */
+ * extension[diagnostic-report].valueReference only Reference(DiagnosticReportLabXpandh)
+* extension[diagnostic-report].valueReference 1..1 
+*/
 
 /*  TO DO Header
 - add optional data enterer

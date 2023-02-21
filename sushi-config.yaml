@@ -154,13 +154,12 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-# groups:
-#  CommonMaps:
-#    name:  Common Maps
-#    description: Common CDA to FHIR maps
-#    resources:
-#      - StructureMap/CdaToFhirDataTypes
-#      - StructureMap/FULLHEADER
+groups:
+  eHNGuidelines:
+    name:  eHN Laboratory Guidelines
+    description: Logical model representing the eHN Laboratory Guidelines
+    resources:
+      - StructureDefinition/LabReport
 
 
 #

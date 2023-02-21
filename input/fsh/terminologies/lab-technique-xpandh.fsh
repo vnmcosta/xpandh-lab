@@ -1,7 +1,7 @@
 ValueSet:      LabTechniqueXpandh
 Id:	       lab-technique-xpandh
 Title:	       "Lab Technique"
-Description:   "Laboratory Technique."
+Description:   "Laboratory Technique [SNOMED CT]"
 * ^status = #draft
 * ^experimental = false
 * $sct#117040002	"Nucleic acid sequencing (procedure)"

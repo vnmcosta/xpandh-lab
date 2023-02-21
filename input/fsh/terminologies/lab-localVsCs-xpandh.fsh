@@ -1,6 +1,6 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: LaboratoryLocalVS
-Id: laboratory-local-vs
+Id: lab-localVs-xpandh
 Title: "Local Laboratory Codes VS"
 Description: "Local laboratory codes Value Set"
 //-------------------------------------------------------------------------------------------
@@ -10,7 +10,7 @@ Description: "Local laboratory codes Value Set"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 CodeSystem: LaboratoryLocalCS
-Id: laboratory-local-cs
+Id: lab-localCs-xpandh
 Title: "Local Laboratory Codes CS"
 Description: "Local laboratory codes Code System"
 * ^experimental = true
