@@ -3,8 +3,8 @@ Parent: DiagnosticReport
 Id: DiagnosticReport-lab-xpandh
 Title: "DiagnosticReport: Laboratory Report"
 Description: "CDiagnosticReport used to represent an entry of a Laboratory Report, including its context, for the scope of the XPanDH project."
-* ^publisher = " XPanDH Project"
-* ^copyright = " XPanDH Project"
+* ^publisher = "XPanDH Project"
+* ^copyright = "XPanDH Project"
 * . ^short = "Laboratory Report DiagnosticReport"
 * . ^definition = "Laboratory Report DiagnosticReport"
 * extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 1..1

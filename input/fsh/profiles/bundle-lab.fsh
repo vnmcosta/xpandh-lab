@@ -3,8 +3,8 @@ Parent: Bundle
 Id: Bundle-lab-xpandh
 Title: "Bundle: Laboratory Report"
 Description: "Clinical document used to represent a Laboratory Report for the scope of the XPanDH project."
-* ^publisher = " XPanDH Project"
-* ^copyright = " XPanDH Project"
+* ^publisher = "XPanDH Project"
+* ^copyright = "XPanDH Project"
 * . ^short = "Laboratory Report bundle"
 * . ^definition = "Laboratory Report bundle."
 * identifier ^short = "Business identifier for this Laboratory Report"

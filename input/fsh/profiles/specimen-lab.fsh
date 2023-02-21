@@ -2,10 +2,10 @@ Profile: SpecimenXpandh
 Parent: Specimen
 Id: specimen-xpandh
 Title: "Specimen: Laboratory"
-Description: " XPanDH Specimen profile."
+Description: "XPanDH Specimen profile."
 * ^status = #draft
-* ^publisher = " XPanDH Project"
-* ^copyright = " XPanDH Project"
+* ^publisher = "XPanDH Project"
+* ^copyright = "XPanDH Project"
 * . ^short = "Laboratory Specimen"
 * . ^definition = "Laboratory specimen"
 * type from LabSpecimenTypesXpandh (preferred)

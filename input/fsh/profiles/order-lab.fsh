@@ -2,8 +2,8 @@
 //====== RuleSet =====================================
 
 /* RuleSet: OrderCommonRules
-* ^publisher = " XPanDH Project"
-* ^copyright = " XPanDH Project"
+* ^publisher = "XPanDH Project"
+* ^copyright = "XPanDH Project"
 * identifier 1..
 * category 1.. 
 * code 1..

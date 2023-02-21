@@ -26,4 +26,24 @@ Quisque at mauris rutrum, pellentesque ex eu, volutpat mauris. Suspendisse poten
 Donec accumsan tempor enim, vel fermentum magna imperdiet vel. Nunc quis nisi id orci sodales lobortis. Vestibulum massa purus, tincidunt nec congue pharetra, ultrices ac velit. Duis in convallis neque. Integer elementum, purus at viverra mattis, tellus arcu rutrum ex, a aliquam lacus turpis a justo. Nam id mi magna. Maecenas sed elementum ligula.
 
 </p>
+
+<a name="dependencies">  </a>
+<h3>Dependencies</h3>
+
+{% include dependency-table.xhtml %}
+
+<a name="x-versions">  </a>
+<h3>Cross Version Analysis</h3>
+
+{% include cross-version-analysis.xhtml %}
+
+<a name="global">  </a>
+<h3>Global Profiles</h3>
+
+{% include globals-table.xhtml %}
+
+<a name="authors">  </a>
+<h3>Authors and Contributors</h3>
+
+
 </div>
