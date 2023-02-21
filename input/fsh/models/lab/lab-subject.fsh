@@ -38,7 +38,7 @@ Title: "eHN Lab Subject model to FHIR R4 Map"
 Source: Subject				
 Target: "hl7.org/fhir/r4"				
 				
-* -> "Patient.conformsTo('http://hl7.eu/fhir/ig/xpandh/StructureDefinition/Patient-eu-xeh')"				
+* -> "Patient.conformsTo('http://hl7.eu/fhir/ig/xpandh/StructureDefinition/Patient-eu-xpandh')"				
 * identification -> "Patient"				
 * identification.familyName -> "Patient.name.family"				
 * identification.givenName -> "Patient.name.given"				

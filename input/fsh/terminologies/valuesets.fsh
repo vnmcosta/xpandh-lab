@@ -1,6 +1,6 @@
-ValueSet:      LabStudyTypesXeh
-Id:	       lab-studyType-xeh
-Title:	       "Lab Study Types (X-eHealth)"
+ValueSet:      LabStudyTypesXpandh
+Id:	       lab-studyType-xpandh
+Title:	       "Lab Study Types"
 Description:   "Laboratory Specialties.\r\n
 Notes:\r\n
 Note 1:26436-6 (LABORATORY STUDIES) enables issuing a report putting together observations from multiple specialties (disciplines) in the same text block, allowing delivery of a global interpretation comment at the end of the text block that will be rendered at the end of the report.\r\n
@@ -30,8 +30,8 @@ Note 4:Virology MAY be included in 18725-2 (MICROBIOLOGY STUDIES) specialty or 1
 * $loinc#26438-2 "CYTOLOGY STUDIES"
 
 ValueSet: LabOrderCodesXeH
-Id: lab-order-codes-xeh
-Title: "Lab Order Codes (X-eHealth)"
-Description: "Laboratory Order Codes for use in X-eHealth."
+Id: lab-order-codes-xpandh
+Title: "Lab Order Codes"
+Description: "Laboratory Order Codes for use in  XPanDH."
 * include codes from system $loinc and valueset $results-laboratory-observations-uv-ips where ORDER_OBS = "Order"
 * include codes from system $loinc and valueset $results-laboratory-observations-uv-ips where ORDER_OBS = "Both"

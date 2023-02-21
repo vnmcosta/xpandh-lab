@@ -1,8 +1,8 @@
-Profile: ObservationResultsLaboratoryXeh
-Parent: ObservationResultsXeh
-Id: Observation-results-lab-xeh
-Title:    "Observation Results: laboratory (X-eHealth)"
-Description: """This profile constrains the Observation resource to represent results produced by laboratory tests or panels/studies for the X-eHealth project.
+Profile: ObservationResultsLaboratoryXpandh
+Parent: ObservationResultsXpandh
+Id: Observation-results-lab-xpandh
+Title:    "Observation Results: laboratory"
+Description: """This profile constrains the Observation resource to represent results produced by laboratory tests or panels/studies for the  XPanDH project.
 This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and or a global interpretation by the producer of the study, in the comment element; and references the atomic results of the study as "has-member" child observations.
 """
 * ^experimental = false
@@ -27,7 +27,7 @@ This observation may represent the result of a simple laboratory test such as he
 * code ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * code ^binding.extension[=].valueString = "ObservationCode"
 * performer 1.. MS
-* performer only Reference(PractitionerRoleXeh or PractitionerXeh or $Organization-uv-ips or CareTeam or PatientXeh or RelatedPerson)
+* performer only Reference(PractitionerRoleXpandh or PractitionerXpandh or $Organization-uv-ips or CareTeam or PatientXpandh or RelatedPerson)
 * value[x] MS
 * value[x] ^slicing.discriminator.type = #type
 * value[x] ^slicing.discriminator.path = "$this"
@@ -74,8 +74,8 @@ This observation may represent the result of a simple laboratory test such as he
 * valueCodeableConcept ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a microorganisms value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."
 * valueCodeableConcept ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * interpretation only $CodeableConcept-uv-ips
-* specimen only Reference(SpecimenXeh)
-* hasMember only Reference(ObservationResultsLaboratoryXeh or ObservationResultsXeh)
+* specimen only Reference(SpecimenXpandh)
+* hasMember only Reference(ObservationResultsLaboratoryXpandh or ObservationResultsXpandh)
 * hasMember ^definition = "A reference to another Observation profiled by Observation-results-laboratory-uv-ips. The target observation (for instance an individual test member of a panel) is considered as a sub-observation of the current one, which plays the role of a grouper."
 * hasMember ^comment = "This element is used in the context of international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation is the grouper, and its set of sub-observations are related observations using the type \"has-member\".  For a discussion on the ways Observations can be assembled in groups together see [Observation Grouping](http://hl7.org/fhir/observation.html#obsgrouping)."
 

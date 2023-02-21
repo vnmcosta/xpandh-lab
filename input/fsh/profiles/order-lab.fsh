@@ -2,19 +2,19 @@
 //====== RuleSet =====================================
 
 /* RuleSet: OrderCommonRules
-* ^publisher = "X-eHealth Project"
-* ^copyright = "X-eHealth Project"
+* ^publisher = " XPanDH Project"
+* ^copyright = " XPanDH Project"
 * identifier 1..
 * category 1.. 
 * code 1..
 * subject 1.. */
 
 
-Profile: ServiceRequestLabXeh
+Profile: ServiceRequestLabXpandh
 Parent: ServiceRequest
-Id: ServiceRequest-lab-xeh
+Id: ServiceRequest-lab-xpandh
 Title: "ServiceRequest: Laboratory Order"
-Description: "ServiceRequest used to represent a Laboratory Order for the scope of the Xehealth project."
+Description: "ServiceRequest used to represent a Laboratory Order for the scope of the XPanDH project."
 // Clarify when to use ServiceRequest and RequestGroup
 * . ^short = "Laboratory Order"
 * . ^definition = "Laboratory Order composition."
@@ -24,9 +24,9 @@ Description: "ServiceRequest used to represent a Laboratory Order for the scope 
 * code 1..
 * code from LabOrderCodesXeH (preferred)
 * subject 1..
-* subject only Reference (PatientXeh or Patient or Group or Location or Device)
+* subject only Reference (PatientXpandh or Patient or Group or Location or Device)
 * requisition ^short = "Composite Request ID." 
-* specimen	only Reference (SpecimenXeh)
+* specimen	only Reference (SpecimenXpandh)
   * ^short = "Must be present, if order is request for test" // Check....
   // add invariant ?
 * insurance only Reference (Coverage)

@@ -1,6 +1,6 @@
-ValueSet:      LabSpecimenTypesXeh
-Id:	       lab-specimenType-xeh
-Title:	       "Lab Specimen Types (X-eHealth)"
+ValueSet:      LabSpecimenTypesXpandh
+Id:	       lab-specimenType-xpandh
+Title:	       "Lab Specimen Types"
 Description:   "Laboratory Specimen."
 * ^status = #draft
 * ^experimental = false
@@ -109,9 +109,9 @@ Description:   "Laboratory Specimen."
 * $sct#1003705007   "Drain tip submitted as specimen"
 
 
-ValueSet:      LabSpecimenContainerXeh
-Id:	       lab-specimenContainer-xeh
-Title:	       "Lab Specimen Container (X-eHealth)"
+ValueSet:      LabSpecimenContainerXpandh
+Id:	       lab-specimenContainer-xpandh
+Title:	       "Lab Specimen Container"
 Description:   "Laboratory specimen containers."
 * ^status = #draft
 * ^experimental = false
@@ -177,9 +177,9 @@ Description:   "Laboratory specimen containers."
 * $sct#767385003	"Aerobic blood culture bottle"
 * $sct#767383005	"Anaerobic blood culture bottle"
 
-ValueSet:      LabSpecimenAdditiveXeh
-Id:	       lab-specimenAdditive-xeh
-Title:	       "Lab Specimen Additive (X-eHealth)"
+ValueSet:      LabSpecimenAdditiveXpandh
+Id:	       lab-specimenAdditive-xpandh
+Title:	       "Lab Specimen Additive"
 Description:   "Laboratory specimen additives."
 * ^status = #draft
 * ^experimental = false

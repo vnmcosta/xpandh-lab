@@ -1,14 +1,14 @@
-Profile: DiagnosticReportLabXeh
+Profile: DiagnosticReportLabXpandh
 Parent: DiagnosticReport
-Id: DiagnosticReport-lab-xeh
+Id: DiagnosticReport-lab-xpandh
 Title: "DiagnosticReport: Laboratory Report"
-Description: "CDiagnosticReport used to represent an entry of a Laboratory Report, including its context, for the scope of the Xehealth project."
-* ^publisher = "X-eHealth Project"
-* ^copyright = "X-eHealth Project"
+Description: "CDiagnosticReport used to represent an entry of a Laboratory Report, including its context, for the scope of the XPanDH project."
+* ^publisher = " XPanDH Project"
+* ^copyright = " XPanDH Project"
 * . ^short = "Laboratory Report DiagnosticReport"
 * . ^definition = "Laboratory Report DiagnosticReport"
 * extension contains $diagnostic-report-composition-r5 named DiagnosticReportCompositionR5 1..1
-* extension[DiagnosticReportCompositionR5].value[x] only Reference(CompositionLabReportXeh)
+* extension[DiagnosticReportCompositionR5].value[x] only Reference(CompositionLabReportXpandh)
 * extension[DiagnosticReportCompositionR5].value[x] 1..1
 
 /*
@@ -27,19 +27,19 @@ Mutimedia Embedded Content
 Annotation Comment
 */
 
-* basedOn only Reference ( ServiceRequestLabXeh )
+* basedOn only Reference ( ServiceRequestLabXpandh )
 * basedOn.extension contains DiagnosticReportBasedOnRequisition named basedOn-requisition 0..*
 * status ^short = "Status of this report"
 * category 1.. // 1.. ?
-* code from LabStudyTypesXeh (preferred) 
+* code from LabStudyTypesXpandh (preferred) 
 * code 1..
 * subject 1..
-* subject only Reference (PatientXeh or Patient or Group or Location or Device)
+* subject only Reference (PatientXpandh or Patient or Group or Location or Device)
 * encounter only Reference (Encounter) // profile defined for other scopes to be checked
 * effective[x] ^short = "Clinically relevant time/time-period for report."
 * performer ^short = "Responsible Diagnostic Service." // add reference to the used profiles
-* specimen only Reference ( SpecimenXeh )
+* specimen only Reference ( SpecimenXpandh )
 * specimen ^short = "Specimens this report is based on."
-* result only Reference (ObservationResultsLaboratoryXeh)
+* result only Reference (ObservationResultsLaboratoryXpandh)
 * result ^short = "results" 
 * imagingStudy 0..0

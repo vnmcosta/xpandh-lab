@@ -1,6 +1,6 @@
-ValueSet:      LabTechniqueXeh
-Id:	       lab-technique-xeh
-Title:	       "Lab Technique (X-eHealth)"
+ValueSet:      LabTechniqueXpandh
+Id:	       lab-technique-xpandh
+Title:	       "Lab Technique"
 Description:   "Laboratory Technique."
 * ^status = #draft
 * ^experimental = false

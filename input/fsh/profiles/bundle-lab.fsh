@@ -1,10 +1,10 @@
-Profile: BundleLabReportXeh
+Profile: BundleLabReportXpandh
 Parent: Bundle
-Id: Bundle-lab-xeh
+Id: Bundle-lab-xpandh
 Title: "Bundle: Laboratory Report"
-Description: "Clinical document used to represent a Laboratory Report for the scope of the Xehealth project."
-* ^publisher = "X-eHealth Project"
-* ^copyright = "X-eHealth Project"
+Description: "Clinical document used to represent a Laboratory Report for the scope of the XPanDH project."
+* ^publisher = " XPanDH Project"
+* ^copyright = " XPanDH Project"
 * . ^short = "Laboratory Report bundle"
 * . ^definition = "Laboratory Report bundle."
 * identifier ^short = "Business identifier for this Laboratory Report"
@@ -27,13 +27,13 @@ Description: "Clinical document used to represent a Laboratory Report for the sc
 * entry ^slicing.rules = #open
 
 * entry contains composition 1..1
-* entry[composition].resource only CompositionLabReportXeh
+* entry[composition].resource only CompositionLabReportXpandh
 
 * entry contains diagnosticReport 1..1
-* entry[diagnosticReport].resource only DiagnosticReportLabXeh
+* entry[diagnosticReport].resource only DiagnosticReportLabXpandh
 
 * entry contains patient 0..1
-* entry[patient].resource only PatientXeh
+* entry[patient].resource only PatientXpandh
 
 * entry contains observation 0..*
 * entry[observation].resource only Observation // Add profiles
@@ -42,4 +42,4 @@ Description: "Clinical document used to represent a Laboratory Report for the sc
 * entry[specimen].resource only Specimen // Add profiles
 
 * entry contains serviceRequest 0..*
-* entry[serviceRequest].resource only ServiceRequestLabXeh // Add profiles
+* entry[serviceRequest].resource only ServiceRequestLabXpandh // Add profiles
