@@ -1,9 +1,11 @@
 
 //============== ALIAS ===============
 
+
 // --- EU Lab Profiles
 Alias: $Composition-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab
 Alias: $Patient-eu-lab = http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab
+
 // --- Code Systems
 Alias: $ajcc = http://cancerstaging.org
 Alias: $atc = http://www.whocc.no/atc
@@ -20,6 +22,10 @@ Alias: $ucum =  http://unitsofmeasure.org
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
+
+// --- SID
+Alias: $uri = urn:ietf:rfc:3986
+Alias: $oid = urn:ietf:rfc:1155
 
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
@@ -44,7 +50,6 @@ Alias: $event-statusReason = http://hl7.org/fhir/StructureDefinition/event-statu
 Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
-// Alias: $composition-diagnostic-report-reference = http://hl7.eu/fhir/ig/xpandh/StructureDefinition/composition-DiagnosticReportReference
 Alias: $diagnostic-report-composition-r5 = http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition
 
 // --- Profiles

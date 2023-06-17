@@ -1,5 +1,5 @@
 Profile: SpecimenXpandh
-Parent: Specimen
+Parent: http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-eu-lab
 Id: specimen-xpandh
 Title: "Specimen: Laboratory"
 Description: "XPanDH Specimen profile."
@@ -8,17 +8,13 @@ Description: "XPanDH Specimen profile."
 * ^copyright = "XPanDH Project"
 * . ^short = "Laboratory Specimen"
 * . ^definition = "Laboratory specimen"
-* type from LabSpecimenTypesXpandh (preferred)
-* type 1..1
-* collection.bodySite from http://hl7.org/fhir/ValueSet/body-site (preferred)
 * processing.additive only Reference(Substance or SpecimenAdditiveSubstanceXpandh)
-* container.type from LabSpecimenContainerXpandh (preferred)
+
 
 // ----------------------------------------
 
 Profile: SpecimenAdditiveSubstanceXpandh
-Parent: Substance
+Parent: http://hl7.eu/fhir/laboratory/StructureDefinition/specimen-additive-substance-eu-lab
 Id: specimen-additive-substance-xpandh
-Title: "Specimen Additive Substance Xpandh"
-Description: """Specimen Additive Substance Xpandh"""
-* code from LabSpecimenAdditiveXpandh (preferred)
+Title: "Specimen Additive Substance XpanDH"
+Description: """Specimen Additive Substance XpanDH"""

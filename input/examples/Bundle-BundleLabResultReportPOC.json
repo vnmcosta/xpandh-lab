@@ -1,0 +1,239 @@
+{
+  "resourceType": "Bundle",
+  "id": "BundleLabResultReportPOC",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
+    ]
+  },
+  "type": "document",
+  "identifier": {
+    "system": "http://example.org",
+    "value": "ba91c64b-f30c-4137-a484-34bbba5e8804"
+  },
+  "timestamp": "2023-03-09T14:30:00+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:4028a0b8-37fc-4491-a8e7-0f28e6fc59b4",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "4028a0b8-37fc-4491-a8e7-0f28e6fc59b4",
+        "identifier": {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:uuid:3f69e0a5-2177-4540-baab-7a5d0877428f"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "11502-2",
+              "system": "http://loinc.org",
+              "display": "Laboratory report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "date": "2023-03-09T14:30:00+01:00",
+        "author": [
+          {
+            "display": "Dr. Patrick Dempsey"
+          }
+        ],
+        "title": "Laboratory Report - 10 March, 2023 14:30",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": "legal",
+            "time": "2020-12-27T14:30:00+01:00",
+            "party": {
+              "reference": "Organization/608b5309-2609-4d03-b6da-c758bfa1de70"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/608b5309-2609-4d03-b6da-c758bfa1de70"
+        },
+        "section": [
+          {
+            "title": "Blood group lab result report",
+            "code": {
+              "coding": [
+                {
+                  "code": "18717-9",
+                  "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+                  "display": "Blood bank studies"
+                }
+              ],
+              "text": "Blood bank studies - Blood group test"
+            },
+            "entry": [
+              {
+                "reference": "Observation/8bd279af-125a-4318-b461-ba5629b12e7f"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a743273-237a-446a-a8da-9e7521cce614",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "3a743273-237a-446a-a8da-9e7521cce614",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+            "valueReference": {
+              "reference": "Composition/4028a0b8-37fc-4491-a8e7-0f28e6fc59b4"
+            }
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11502-2",
+              "system": "http://loinc.org",
+              "display": "Laboratory report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/8bd279af-125a-4318-b461-ba5629b12e7f"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "8472931c-fbd0-437b-9ed1-4f66472c78b5",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "NIIP",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.203.24341.1.20.2",
+            "value": "740512852"
+          },
+          {
+            "system": "urn:oid:1.2.203.24341.1.20.9.1",
+            "value": "A225961454"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "PPN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.840.1.113883.4.330.203",
+            "value": "5484136"
+          }
+        ],
+        "name": [
+          {
+            "family": "Doe",
+            "given": [
+              "John"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-03-21"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8bd279af-125a-4318-b461-ba5629b12e7f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8bd279af-125a-4318-b461-ba5629b12e7f",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "3002989",
+              "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+              "display": "Hepatitis Panel, Acute with Reflex to HBsAg Confirmation and Reflex to HCV by Quantitative NAAT"
+            }
+          ],
+          "text": "Acute Hepatitis Panel, reflex to confirmation"
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "Dr. Patrick Dempsey"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/4e67180b-e419-4c11-8cbd-e946900a9dbe"
+          }
+        ]
+      }
+    }
+  ]
+}

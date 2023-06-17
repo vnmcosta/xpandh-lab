@@ -1,0 +1,1626 @@
+{
+  "resourceType": "Bundle",
+  "id": "BundleLabResultMicroCultureSusc",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab-micro-cult-susc"
+    ]
+  },
+  "type": "document",
+  "identifier": {
+    "system": "http://example.org",
+    "value": "V1CZ454557891308174803488707671420"
+  },
+  "timestamp": "2022-10-25T14:30:00+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:4789a3ee-92b1-41b2-9b97-83daacf2a239",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "4789a3ee-92b1-41b2-9b97-83daacf2a239",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab-micro-cult-susc"
+          ]
+        },
+        "section": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "18725-2",
+                  "system": "http://loinc.org",
+                  "display": "Microbiology studies (set)"
+                }
+              ]
+            },
+            "title": "Bacterial Aerobic & Anaerobic Culture & Susceptibility",
+            "section": [
+              {
+                "code": {
+                  "text": "Gram Stain"
+                },
+                "entry": [
+                  {
+                    "reference": "Observation/40278a69-87aa-470f-a38f-bff1e8aee175"
+                  }
+                ]
+              },
+              {
+                "code": {
+                  "text": "Aerobic Culture"
+                },
+                "entry": [
+                  {
+                    "reference": "Observation/8754019d-256b-4df9-94f2-f80c07e08d47"
+                  }
+                ]
+              },
+              {
+                "code": {
+                  "text": "Anaerobic Culture"
+                },
+                "entry": [
+                  {
+                    "reference": "Observation/5408f7d9-e6a2-492c-8ae3-dbf96b40bf6e"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "identifier": {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:uuid:3f69e0a5-2177-4540-baab-7a5d0877428f"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "LAB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "11502-2",
+              "system": "http://loinc.org",
+              "display": "Laboratory report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "date": "2022-10-25T14:30:00+01:00",
+        "author": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "title": "Laboratory Report Bacterial Aerobic & Anaerobic Culture and Susceptibility - 27 Dec, 2020 14:30",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": "legal",
+            "time": "2020-12-27T14:30:00+01:00",
+            "party": {
+              "reference": "Organization/1e139f41-4d0f-43dd-ad5a-98003c520349"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/1e139f41-4d0f-43dd-ad5a-98003c520349"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5bb42c3f-56fb-4bbc-b939-73910a6cce3b",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "5bb42c3f-56fb-4bbc-b939-73910a6cce3b",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "NIIP",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.203.24341.1.20.2",
+            "value": "740512852"
+          },
+          {
+            "system": "urn:oid:1.2.203.24341.1.20.9.1",
+            "value": "A225961454"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "PPN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.840.1.113883.4.330.203",
+            "value": "5484136"
+          }
+        ],
+        "name": [
+          {
+            "family": "Očkovaný",
+            "given": [
+              "František"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-03-21"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1e139f41-4d0f-43dd-ad5a-98003c520349",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1e139f41-4d0f-43dd-ad5a-98003c520349",
+        "identifier": [
+          {
+            "system": "http://example.org/czech-orgs",
+            "value": "24341"
+          }
+        ],
+        "name": "Ministry of Health of the Czech Republic"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b864303b-91ab-4e29-ad74-31a7d6566875",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "b864303b-91ab-4e29-ad74-31a7d6566875",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab-micro-cult-susc"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+            "valueReference": {
+              "reference": "Composition/4789a3ee-92b1-41b2-9b97-83daacf2a239"
+            }
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "LAB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Bacterial Aerobic & Anaerobic Culture & Susceptibility"
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/bab0016e-1800-4e54-b595-72bd9041ffbc"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/40278a69-87aa-470f-a38f-bff1e8aee175"
+          },
+          {
+            "reference": "Observation/8754019d-256b-4df9-94f2-f80c07e08d47"
+          },
+          {
+            "reference": "Observation/5408f7d9-e6a2-492c-8ae3-dbf96b40bf6e"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bab0016e-1800-4e54-b595-72bd9041ffbc",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "bab0016e-1800-4e54-b595-72bd9041ffbc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"
+          ]
+        },
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "code": "119365002",
+              "system": "http://snomed.info/sct",
+              "display": "Specimen from wound"
+            }
+          ]
+        },
+        "collection": {
+          "collectedDateTime": "2022-10-25T13:35:00+01:00"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:40278a69-87aa-470f-a38f-bff1e8aee175",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "40278a69-87aa-470f-a38f-bff1e8aee175",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Gram Stain"
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/1097929f-890e-4e27-a31d-58599f3e2479"
+          },
+          {
+            "reference": "Observation/fcf220c3-7f3e-44f8-b669-48552a20fa0a"
+          },
+          {
+            "reference": "Observation/331d513e-a57f-4464-9eec-25533aeb6d06"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1097929f-890e-4e27-a31d-58599f3e2479",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1097929f-890e-4e27-a31d-58599f3e2479",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "72163-9",
+              "system": "http://loinc.org",
+              "display": "Leukocytes [Presence] in Specimen by Gram stain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "2667000",
+              "system": "http://snomed.info/sct",
+              "display": "Absent"
+            }
+          ],
+          "text": "None observed"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fcf220c3-7f3e-44f8-b669-48552a20fa0a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fcf220c3-7f3e-44f8-b669-48552a20fa0a",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "664-3",
+              "system": "http://loinc.org",
+              "display": "Microscopic observation [Identifier] in Specimen by Gram stain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "70003006",
+              "system": "http://snomed.info/sct",
+              "display": "Gram-positive cocci in clusters"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/2cecbd1e-4695-46dc-adf8-3ed3b95c0c1e"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2cecbd1e-4695-46dc-adf8-3ed3b95c0c1e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2cecbd1e-4695-46dc-adf8-3ed3b95c0c1e",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Observed Quantity"
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "441614007",
+              "system": "http://snomed.info/sct",
+              "display": "Present + out of +++"
+            }
+          ],
+          "text": "+"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:331d513e-a57f-4464-9eec-25533aeb6d06",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "331d513e-a57f-4464-9eec-25533aeb6d06",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "664-3",
+              "system": "http://loinc.org",
+              "display": "Microscopic observation [Identifier] in Specimen by Gram stain"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "87172008",
+              "system": "http://snomed.info/sct",
+              "display": "Gram-negative rods"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/931c6459-0fb0-4f02-8268-08e6d94a8f5c"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:931c6459-0fb0-4f02-8268-08e6d94a8f5c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "931c6459-0fb0-4f02-8268-08e6d94a8f5c",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Observed Quantity"
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "441517005",
+              "system": "http://snomed.info/sct",
+              "display": "Present ++ out of +++"
+            }
+          ],
+          "text": "++"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8754019d-256b-4df9-94f2-f80c07e08d47",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8754019d-256b-4df9-94f2-f80c07e08d47",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Aerobic Culture"
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/083ee3df-1381-4ed2-849f-77808eb81a36"
+          },
+          {
+            "reference": "Observation/d49839fe-515c-44b6-8d19-3cc5d48feb49"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:083ee3df-1381-4ed2-849f-77808eb81a36",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "083ee3df-1381-4ed2-849f-77808eb81a36",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "634-6",
+              "system": "http://loinc.org",
+              "display": "Bacteria identified in Specimen by Aerobe culture"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "3092008",
+              "system": "http://snomed.info/sct",
+              "display": "Staphylococcus aureus"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/758d2270-a997-4a8f-872f-b3fbaef209fa"
+          },
+          {
+            "reference": "Observation/61f8e930-46e0-41ab-9448-0d1dc74925df"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:758d2270-a997-4a8f-872f-b3fbaef209fa",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "758d2270-a997-4a8f-872f-b3fbaef209fa",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Microorganism Growth"
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "441517005",
+              "system": "http://snomed.info/sct",
+              "display": "Present ++ out of +++"
+            }
+          ],
+          "text": "++"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:61f8e930-46e0-41ab-9448-0d1dc74925df",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "61f8e930-46e0-41ab-9448-0d1dc74925df",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "29576-6",
+              "system": "http://loinc.org",
+              "display": "Bacterial susceptibility panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/85230b86-9b90-4faf-a750-d5fa82520ce9"
+          },
+          {
+            "reference": "Observation/1fb64f47-4272-43ae-a119-c3b4c3367829"
+          },
+          {
+            "reference": "Observation/af249f79-f487-4533-9935-d19ab7043724"
+          },
+          {
+            "reference": "Observation/a4469ca9-d0be-4c58-853a-44cea24484b8"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:85230b86-9b90-4faf-a750-d5fa82520ce9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "85230b86-9b90-4faf-a750-d5fa82520ce9",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "18900-1",
+              "system": "http://loinc.org",
+              "display": "Cephalothin [Susceptibility]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 2,
+          "comparator": "<=",
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "S",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Susceptible"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1fb64f47-4272-43ae-a119-c3b4c3367829",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1fb64f47-4272-43ae-a119-c3b4c3367829",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "20629-2",
+              "system": "http://loinc.org",
+              "display": "levoFLOXacin [Susceptibility]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 4,
+          "comparator": ">",
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Resistant"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:af249f79-f487-4533-9935-d19ab7043724",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "af249f79-f487-4533-9935-d19ab7043724",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "18961-3",
+              "system": "http://loinc.org",
+              "display": "Oxacillin [Susceptibility]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0.5,
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "S",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Susceptible"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a4469ca9-d0be-4c58-853a-44cea24484b8",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a4469ca9-d0be-4c58-853a-44cea24484b8",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "19000-9",
+              "system": "http://loinc.org",
+              "display": "Vancomycin [Susceptibility]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 1,
+          "comparator": "<=",
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "S",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Susceptible"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d49839fe-515c-44b6-8d19-3cc5d48feb49",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d49839fe-515c-44b6-8d19-3cc5d48feb49",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "634-6",
+              "system": "http://loinc.org",
+              "display": "Bacteria identified in Specimen by Aerobe culture"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "40886007",
+              "system": "http://snomed.info/sct",
+              "display": "Klebsiella oxytoca"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/1ada4aeb-37cd-4d76-9815-46f627f5036c"
+          },
+          {
+            "reference": "Observation/d1636a51-d6c7-48de-9de6-29d741c96937"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1ada4aeb-37cd-4d76-9815-46f627f5036c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1ada4aeb-37cd-4d76-9815-46f627f5036c",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Microorganism Growth"
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "263866000",
+              "system": "http://snomed.info/sct",
+              "display": "Scanty growth"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d1636a51-d6c7-48de-9de6-29d741c96937",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d1636a51-d6c7-48de-9de6-29d741c96937",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "29576-6",
+              "system": "http://loinc.org",
+              "display": "Bacterial susceptibility panel"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/7b52c241-226a-43d3-ba6a-f2ca18d5b0dd"
+          },
+          {
+            "reference": "Observation/3923e71d-31b0-49d3-94f0-2c311600e54d"
+          },
+          {
+            "reference": "Observation/66e76861-53ed-4560-aa54-2efa5b4aff64"
+          },
+          {
+            "reference": "Observation/5601b27d-69a7-44eb-be1a-af632aa54109"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7b52c241-226a-43d3-ba6a-f2ca18d5b0dd",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7b52c241-226a-43d3-ba6a-f2ca18d5b0dd",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "18864-9",
+              "system": "http://loinc.org",
+              "display": "Ampicillin [Susceptibility]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 16,
+          "comparator": ">",
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Resistant"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3923e71d-31b0-49d3-94f0-2c311600e54d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3923e71d-31b0-49d3-94f0-2c311600e54d",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "18906-8",
+              "system": "http://loinc.org",
+              "display": "Ciprofloxacin [Susceptibility]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0.5,
+          "comparator": "<=",
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "S",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Susceptible"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:66e76861-53ed-4560-aa54-2efa5b4aff64",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "66e76861-53ed-4560-aa54-2efa5b4aff64",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "18928-2",
+              "system": "http://loinc.org",
+              "display": "Gentamicin [Susceptibility]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 8,
+          "comparator": ">",
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Resistant"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5601b27d-69a7-44eb-be1a-af632aa54109",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5601b27d-69a7-44eb-be1a-af632aa54109",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "18932-4",
+              "system": "http://loinc.org",
+              "display": "Imipenem [Susceptibility]"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 1,
+          "comparator": "<=",
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "S",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Susceptible"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5408f7d9-e6a2-492c-8ae3-dbf96b40bf6e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5408f7d9-e6a2-492c-8ae3-dbf96b40bf6e",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "635-3",
+              "system": "http://loinc.org",
+              "display": "Bacteria identified in Specimen by Anaerobe culture"
+            }
+          ],
+          "text": "Anaerobic Culture"
+        },
+        "subject": {
+          "reference": "Patient/5bb42c3f-56fb-4bbc-b939-73910a6cce3b"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "264868006",
+              "system": "http://snomed.info/sct",
+              "display": "No growth"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

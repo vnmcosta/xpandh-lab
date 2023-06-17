@@ -10,8 +10,8 @@ Usage: #example
 * timestamp = "2022-03-30T11:24:26+01:00"
 * entry[+].fullUrl = "urn:uuid:26032a57-083a-4ddf-b019-e566ae02f740"
 * entry[=].resource = Inline-Instance-for-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883-1
-* entry[+].fullUrl = "urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04"
-* entry[=].resource = dc2b606f-3cf7-4711-a2ff-52da04b89e04
+* entry[+].fullUrl = "Inline-patient-cda2fhir-it"
+* entry[=].resource = Inline-patient-cda2fhir-it
 * entry[+].fullUrl = "urn:uuid:195a7abc-d109-404a-9dc7-ad2e80bafc8a"
 * entry[=].resource = Inline-Instance-for-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883-2
 * entry[+].fullUrl = "urn:uuid:5837e9bf-8a2b-43c3-bec8-d68dbd7fa7fb"
@@ -82,7 +82,7 @@ Usage: #inline
 * status = #final
 * type = http://loinc.org#11502-2 "Laboratory report"
 * type.text = "Referto di laboratorio"
-* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
+* subject = Reference(Inline-patient-cda2fhir-it)
 * encounter = Reference(urn:uuid:195a7abc-d109-404a-9dc7-ad2e80bafc8a)
 * date = "2022-03-30T11:24:26+01:00"
 * author[+] = Reference(urn:uuid:88868d3e-7ab1-4ee5-983e-b979c4971f5c)
@@ -111,7 +111,7 @@ Usage: #inline
 * section.section.text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><table id=\"nota1\"><thead><tr><th>Esame</th><th>Metodo utilizzato per l'esame</th><th>Materiale utilizzato per l'esame</th><th>Risultato dell'esame</th><th>Commenti e note</th><th>Unità di Misura</th><th>Range di Riferimento</th><th>Criteri per il range di riferimento</th><th>Interpretazione</th><th>Allegati multimediali</th></tr></thead><tbody><tr><td>Microalbumina massa/volume in urine</td><td/><td>Urine</td><td>20</td><td/><td>mg/L</td><td> 0 - 20 </td><td/><td>N</td><td/></tr></tbody></table></li></ul></div>"
 * section.section.entry = Reference(urn:uuid:763f7902-8103-4d10-8bd1-546a726d43ee)
 
-Instance: dc2b606f-3cf7-4711-a2ff-52da04b89e04
+Instance: Inline-patient-cda2fhir-it
 InstanceOf: Patient
 Usage: #inline
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
@@ -160,7 +160,7 @@ Usage: #inline
 * id = "195a7abc-d109-404a-9dc7-ad2e80bafc8a"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
-* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
+* subject = Reference(Inline-patient-cda2fhir-it)
 * basedOn = Reference(urn:uuid:1d4cbcd1-e0d3-49b6-92d8-1893da8d08e1)
 * participant[+].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#REF
 * participant[=].period.start = "2022-03-20T11:00:00+01:00"
@@ -174,13 +174,13 @@ InstanceOf: Specimen
 Usage: #inline
 * id = "5837e9bf-8a2b-43c3-bec8-d68dbd7fa7fb"
 * type = urn:oid:2.16.840.1.113883.5.129#UR "Urine"
-* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
+* subject = Reference(Inline-patient-cda2fhir-it)
 
 Instance: c92e7441-a6ac-4a4e-9a0b-1c2ee6bfe7dd
 InstanceOf: DocumentReference
 Usage: #inline
 * status = #current
-* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
+* subject = Reference(Inline-patient-cda2fhir-it)
 * author = Reference(urn:uuid:ab279a0b-320f-483b-9a5d-f1f7e8ceacb2)
 * custodian = Reference(urn:uuid:a59d2bf2-7d6c-49a5-9ceb-c3f165ebd20d)
 * content.attachment.contentType = urn:ietf:bcp:13#text/plain
@@ -386,7 +386,7 @@ Usage: #inline
 * priority = #asap
 * code = http://loinc.org#14957-5 "Microalbumin [Mass/volume] in Urine"
 * code.text = "Microalbumin Massa/Volume in Urine"
-* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
+* subject = Reference(Inline-patient-cda2fhir-it)
 * encounter = Reference(urn:uuid:195a7abc-d109-404a-9dc7-ad2e80bafc8a)
 
 Instance: Inline-Instance-for-IT-CDA2FHIR-17e2cad1-c3e3-4901-adb1-c35a0b82b883-11
@@ -478,7 +478,7 @@ Usage: #inline
 * category = $v2-0074#LAB "Laboratory"
 * code = http://loinc.org#14957-5 "Microalbumin [Mass/volume] in Urine"
 * code.text = "Microalbumin Massa/Volume in Urine"
-* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
+* subject = Reference(Inline-patient-cda2fhir-it)
 * encounter = Reference(urn:uuid:195a7abc-d109-404a-9dc7-ad2e80bafc8a)
 * specimen = Reference(urn:uuid:5837e9bf-8a2b-43c3-bec8-d68dbd7fa7fb)
 * result = Reference(urn:uuid:763f7902-8103-4d10-8bd1-546a726d43ee)
@@ -491,7 +491,7 @@ Usage: #inline
 * code.coding[+] = http://loinc.org#14957-5 "Microalbumin [Mass/volume] in Urine"
 * code.coding[+] = urn:oid:2.16.840.1.113883.2.9.2.30.6.11#0090334.02 "Albumina nelle urine"
 * code.text = "Microalbumin Massa/Volume in Urine"
-* subject = Reference(urn:uuid:dc2b606f-3cf7-4711-a2ff-52da04b89e04)
+* subject = Reference(Inline-patient-cda2fhir-it)
 * encounter = Reference(urn:uuid:195a7abc-d109-404a-9dc7-ad2e80bafc8a)
 * effectiveDateTime = "2022-03-30T11:24:26+01:00"
 * valueQuantity.value = 16

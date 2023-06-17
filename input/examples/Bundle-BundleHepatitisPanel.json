@@ -1,0 +1,809 @@
+{
+  "resourceType": "Bundle",
+  "id": "BundleHepatitisPanel",
+  "meta": {
+    "profile": [
+      "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab"
+    ]
+  },
+  "type": "document",
+  "identifier": {
+    "system": "http://example.org",
+    "value": "V1CZ454557891308174803488707671420"
+  },
+  "timestamp": "2022-10-25T14:30:00+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:4028a0b8-37fc-4491-a8e7-0f28e6fc59b4",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "4028a0b8-37fc-4491-a8e7-0f28e6fc59b4",
+        "identifier": {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:uuid:3f69e0a5-2177-4540-baab-7a5d0877428f"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "11502-2",
+              "system": "http://loinc.org",
+              "display": "Laboratory report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "date": "2022-10-25T14:30:00+01:00",
+        "author": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "title": "Laboratory Report Hepatitis Panel - 27 Dec, 2020 14:30",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": "legal",
+            "time": "2020-12-27T14:30:00+01:00",
+            "party": {
+              "reference": "Organization/608b5309-2609-4d03-b6da-c758bfa1de70"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/608b5309-2609-4d03-b6da-c758bfa1de70"
+        },
+        "section": [
+          {
+            "title": "Hepatitis screening panel",
+            "code": {
+              "coding": [
+                {
+                  "code": "3002989",
+                  "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+                  "display": "Hepatitis Panel, Acute with Reflex to HBsAg Confirmation and Reflex to HCV by Quantitative NAAT"
+                }
+              ],
+              "text": "Acute Hepatitis Panel, reflex to confirmation"
+            },
+            "entry": [
+              {
+                "reference": "Observation/2c72163e-b741-44a3-aff7-c52f17f7a1ba"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8472931c-fbd0-437b-9ed1-4f66472c78b5",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "8472931c-fbd0-437b-9ed1-4f66472c78b5",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "NIIP",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.203.24341.1.20.2",
+            "value": "740512852"
+          },
+          {
+            "system": "urn:oid:1.2.203.24341.1.20.9.1",
+            "value": "A225961454"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "PPN",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.840.1.113883.4.330.203",
+            "value": "5484136"
+          }
+        ],
+        "name": [
+          {
+            "family": "Očkovaný",
+            "given": [
+              "František"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2000-03-21"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:608b5309-2609-4d03-b6da-c758bfa1de70",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "608b5309-2609-4d03-b6da-c758bfa1de70",
+        "identifier": [
+          {
+            "system": "http://example.org/czech-orgs",
+            "value": "24341"
+          }
+        ],
+        "name": "Ministry of Health of the Czech Republic"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a743273-237a-446a-a8da-9e7521cce614",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "3a743273-237a-446a-a8da-9e7521cce614",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+            "valueReference": {
+              "reference": "Composition/4028a0b8-37fc-4491-a8e7-0f28e6fc59b4"
+            }
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "3002989",
+              "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+              "display": "Hepatitis Panel, Acute with Reflex to HBsAg Confirmation and Reflex to HCV by Quantitative NAAT"
+            }
+          ],
+          "text": "Acute Hepatitis Panel, reflex to confirmation"
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "specimen": [
+          {
+            "reference": "Specimen/3c9bd730-3ff9-40ee-9da1-4f3d5c526f13"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/2c72163e-b741-44a3-aff7-c52f17f7a1ba"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3c9bd730-3ff9-40ee-9da1-4f3d5c526f13",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "3c9bd730-3ff9-40ee-9da1-4f3d5c526f13",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"
+          ]
+        },
+        "status": "available",
+        "type": {
+          "coding": [
+            {
+              "code": "119364003",
+              "system": "http://snomed.info/sct",
+              "display": "Serum specimen"
+            }
+          ]
+        },
+        "collection": {
+          "collectedDateTime": "2022-10-25T13:35:00+01:00"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2c72163e-b741-44a3-aff7-c52f17f7a1ba",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2c72163e-b741-44a3-aff7-c52f17f7a1ba",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "3002989",
+              "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+              "display": "Hepatitis Panel, Acute with Reflex to HBsAg Confirmation and Reflex to HCV by Quantitative NAAT"
+            }
+          ],
+          "text": "Acute Hepatitis Panel, reflex to confirmation"
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/104a5829-565b-46a6-85d6-36751ef79a40"
+          },
+          {
+            "reference": "Observation/01b8ec35-9b20-45a4-bd41-42eeae2fd521"
+          },
+          {
+            "reference": "Observation/096e27da-0768-47e4-b33c-9f1be93e1f88"
+          },
+          {
+            "reference": "Observation/861e7b48-5497-410a-bed8-2cde814e09fc"
+          },
+          {
+            "reference": "Observation/cc96d499-3e0e-4588-a021-4fe576766112"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:104a5829-565b-46a6-85d6-36751ef79a40",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "104a5829-565b-46a6-85d6-36751ef79a40",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "0020089",
+              "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+              "display": "Hepatitis B Surface Antigen"
+            },
+            {
+              "code": "5196-1",
+              "system": "http://loinc.org",
+              "display": "Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay"
+            }
+          ],
+          "text": "Hepatitis B Surface Antigen"
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260385009",
+              "system": "http://snomed.info/sct",
+              "display": "Negative"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/3c9bd730-3ff9-40ee-9da1-4f3d5c526f13"
+        },
+        "referenceRange": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "normal",
+                  "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                  "display": "Normal Range"
+                }
+              ]
+            },
+            "text": "Negative"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:01b8ec35-9b20-45a4-bd41-42eeae2fd521",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "01b8ec35-9b20-45a4-bd41-42eeae2fd521",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "0020092",
+              "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+              "display": "Hepatitis B Core Antibody, IgM"
+            },
+            {
+              "code": "24113-3",
+              "system": "http://loinc.org",
+              "display": "Hepatitis B virus core IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+            }
+          ],
+          "text": "Hepatitis B Core Antibody, IgM"
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260385009",
+              "system": "http://snomed.info/sct",
+              "display": "Negative"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/3c9bd730-3ff9-40ee-9da1-4f3d5c526f13"
+        },
+        "referenceRange": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "normal",
+                  "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                  "display": "Normal Range"
+                }
+              ]
+            },
+            "text": "Negative"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:096e27da-0768-47e4-b33c-9f1be93e1f88",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "096e27da-0768-47e4-b33c-9f1be93e1f88",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "0020093",
+              "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+              "display": "Hepatitis A Antibody, IgM"
+            },
+            {
+              "code": "13950-1",
+              "system": "http://loinc.org",
+              "display": "Hepatitis A virus IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+            }
+          ],
+          "text": "Hepatitis A Antibody, IgM"
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260385009",
+              "system": "http://snomed.info/sct",
+              "display": "Negative"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Normal"
+              }
+            ]
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/3c9bd730-3ff9-40ee-9da1-4f3d5c526f13"
+        },
+        "referenceRange": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "normal",
+                  "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                  "display": "Normal Range"
+                }
+              ]
+            },
+            "text": "Negative"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:861e7b48-5497-410a-bed8-2cde814e09fc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "861e7b48-5497-410a-bed8-2cde814e09fc",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "3003128",
+              "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+              "display": "Hepatitis C Antibody by CIA Interp"
+            },
+            {
+              "code": "13955-0",
+              "system": "http://loinc.org",
+              "display": "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
+            }
+          ],
+          "text": "Hepatitis C Antibody by CIA Interp"
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "10828004",
+              "system": "http://snomed.info/sct",
+              "display": "Positive"
+            }
+          ]
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "A",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "Abnormal"
+              }
+            ]
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/3c9bd730-3ff9-40ee-9da1-4f3d5c526f13"
+        },
+        "referenceRange": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "normal",
+                  "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                  "display": "Normal Range"
+                }
+              ]
+            },
+            "text": "Negative"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cc96d499-3e0e-4588-a021-4fe576766112",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc96d499-3e0e-4588-a021-4fe576766112",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-results-eu-lab"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "MB",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                "display": "Microbiology"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2002404",
+              "system": "http://hl7.eu/fhir/laboratory/CodeSystem/lab-localCs-eu-lab",
+              "display": "Hepatitis C Antibody by CIA Index"
+            },
+            {
+              "code": "57006-9",
+              "system": "http://loinc.org",
+              "display": "Hepatitis C virus IgG Ab [Units/volume] in Serum by Immunoassay"
+            }
+          ],
+          "text": "Hepatitis C Antibody by CIA Index"
+        },
+        "subject": {
+          "reference": "Patient/8472931c-fbd0-437b-9ed1-4f66472c78b5"
+        },
+        "effectiveDateTime": "2022-10-25T13:35:00+01:00",
+        "performer": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "valueQuantity": {
+          "value": 9.89,
+          "code": "[arb'U]/mL",
+          "system": "http://unitsofmeasure.org",
+          "unit": "IV"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "H",
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "display": "High"
+              }
+            ],
+            "text": "Low Positive"
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/3c9bd730-3ff9-40ee-9da1-4f3d5c526f13"
+        },
+        "referenceRange": [
+          {
+            "high": {
+              "value": 0.79,
+              "code": "[arb'U]/mL",
+              "system": "http://unitsofmeasure.org",
+              "unit": "IV"
+            },
+            "type": {
+              "coding": [
+                {
+                  "code": "normal",
+                  "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                  "display": "Normal Range"
+                }
+              ]
+            }
+          },
+          {
+            "low": {
+              "value": 0.8,
+              "code": "[arb'U]/mL",
+              "system": "http://unitsofmeasure.org",
+              "unit": "IV"
+            },
+            "high": {
+              "value": 0.99,
+              "code": "[arb'U]/mL",
+              "system": "http://unitsofmeasure.org",
+              "unit": "IV"
+            },
+            "type": {
+              "text": "Equivocal"
+            }
+          },
+          {
+            "low": {
+              "value": 1,
+              "code": "[arb'U]/mL",
+              "system": "http://unitsofmeasure.org",
+              "unit": "IV"
+            },
+            "high": {
+              "value": 10.99,
+              "code": "[arb'U]/mL",
+              "system": "http://unitsofmeasure.org",
+              "unit": "IV"
+            },
+            "type": {
+              "text": "Low Positive"
+            }
+          },
+          {
+            "low": {
+              "value": 11,
+              "code": "[arb'U]/mL",
+              "system": "http://unitsofmeasure.org",
+              "unit": "IV"
+            },
+            "type": {
+              "text": "High Positive"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

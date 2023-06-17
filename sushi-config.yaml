@@ -84,6 +84,8 @@ menu:
   Artifacts: artifacts.html
   Downloads: downloads.html
   
+instanceOptions:
+  manualSliceOrdering: true
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
