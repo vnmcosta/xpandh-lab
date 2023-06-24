@@ -1,8 +1,8 @@
 id: hl7.eu.fhir.xpandh.lab
 canonical: http://hl7.eu/fhir/ig/xpandh/lab # check if this may create issues
-name:  XPandhLaboratoryIg
-title: XPanDH Laboratory Report
-description: This guide describes how the Laboratory Report can be represented for the purpose of the XPanDH project experimantions.
+name:  XpandhLaboratoryIg
+title: XpanDH Laboratory Report
+description: This guide describes how the Laboratory Report can be represented for the purpose of the XpanDH project experimantions.
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -11,7 +11,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: 	http://unstats.un.org/unsd/methods/m49/m49.htm#150 "Europe" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name:  XPandDH Project
+  name:  XpanDH Project
   url: https://xpandh-project.iscte-iul.pt
   # email: test@example.org
 
@@ -144,6 +144,51 @@ instanceOptions:
 #    exampleBoolean: true
 #  Patient/bad-example: omit
 
+
+resources: 
+  ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus:
+    name: DiagnosticReport to Composition status
+    description: Proposed relationship between the statuses used in the DiagnosticReport resource and that used for the Composition.
+
+  ConceptMap/ConceptMap-eu-labRpt2FHIR:
+    name: eHN Lab Report model to this guide
+    description: It shows how the Laboratory Report data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/ConceptMap-eu-payer2FHIR:
+    name: eHN Payer model to this guide
+    description: It shows how the Payer data set defined by the EU eHN guidelines is mapped into this guide.
+  
+  ConceptMap/ConceptMap-eu-recipient2FHIR:
+    name: eHN Recipient model to this guide
+    description: It shows how the Recipient data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/ConceptMap-eu-subject2FHIR:
+    name: eHN Subject model to this guide
+    description: It shows how the Subject data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/ConceptMap-eu-author2FHIR:
+    name: eHN Author model to this guide
+    description: It shows how the Author data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/ConceptMap-eu-legalAuth2FHIR:
+    name: eHN Legal Authenticator model to this guide
+    description: It shows how the Legal Authenticator data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/ConceptMap-eu-order2FHIR:
+    name: eHN Order model to this guide
+    description: It shows how the Order data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/ConceptMap-eu-validator2FHIR:
+    name: eHN Validator model to this guide
+    description: It shows how the Validator data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/ConceptMap-eu-specimen2FHIR:
+    name: eHN Specimen model to this guide
+    description: It shows how the Specimen data set defined by the EU eHN guidelines is mapped into this guide.
+
+  ConceptMap/ConceptMap-eu-result2FHIR:
+    name: eHN Result model to this guide
+    description: It shows how the Result data set defined by the EU eHN guidelines is mapped into this guide. 
  
 
 
@@ -160,9 +205,34 @@ instanceOptions:
 groups:
   eHNGuidelines:
     name:  eHN Laboratory Guidelines
-    description: Logical model representing the eHN Laboratory Guidelines
+    description: Logical models representing the eHN Laboratory Guidelines
     resources:
       - StructureDefinition/LabReport
+      - StructureDefinition/Subject
+      - StructureDefinition/Author
+      - StructureDefinition/Validator
+      - StructureDefinition/LegalAuthenticator
+      - StructureDefinition/Recipient      
+      - StructureDefinition/Order      
+      - StructureDefinition/Result
+      - StructureDefinition/SpecimenLab
+      - StructureDefinition/Payer
+
+  logicalModelsMaps:
+    name:  Logical Model mappings
+    description: Concept Maps describing how the eHN Laboratory Guidelines are supposed to be implemented by using this guide
+    resources:
+      - ConceptMap/ConceptMap-eu-labRpt2FHIR
+      - ConceptMap/ConceptMap-eu-payer2FHIR
+      - ConceptMap/ConceptMap-eu-recipient2FHIR
+      - ConceptMap/ConceptMap-eu-subject2FHIR
+      - ConceptMap/ConceptMap-eu-author2FHIR
+      - ConceptMap/ConceptMap-eu-order2FHIR
+      - ConceptMap/ConceptMap-eu-legalAuth2FHIR
+      - ConceptMap/ConceptMap-eu-validator2FHIR
+      - ConceptMap/ConceptMap-eu-specimen2FHIR
+      - ConceptMap/ConceptMap-eu-result2FHIR
+   
 
 
 #

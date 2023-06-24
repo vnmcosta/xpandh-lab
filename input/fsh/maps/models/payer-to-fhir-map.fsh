@@ -5,17 +5,17 @@ Instance: ConceptMap-eu-payer2FHIR
 InstanceOf: ConceptMap					
 Usage: #definition					
 // * url = "http://terminology.hl7.it/ConceptMap/ConceptMap-subject2osiris"					
-* name = "ConceptMapPayer2DiagRpt"					
+* name = "Payer2Fhir"					
 * title = "eHN Payer to this guide Map"					
 * status = #draft					
 * experimental = true					
 * description = "eHN Payer Model to this guide Map"					
 * purpose = "It shows how the Laboratory Report Payer data set defined by the EU eHN guidelines is mapped into this guide"					
 * sourceUri = "http://hl7.eu/fhir/ig/xpandh/lab/StructureDefinition/Payer"					
-* targetUri = "http://hl7.eu/fhir/ig/xpandh/lab/StructureDefinition/ServiceRequest-lab-xpandh"					
+* targetUri = "http://hl7.eu/fhir/ig/xpandh/lab/StructureDefinition/ServiceRequest-eu-lab"					
 					
 * group[+].source = "http://hl7.eu/fhir/ig/xpandh/lab/StructureDefinition/Payer"					
-* group[=].target = "http://hl7.eu/fhir/ig/xpandh/lab/StructureDefinition/ServiceRequest-lab-xpandh"					
+* group[=].target = "http://hl7.eu/fhir/ig/xpandh/lab/StructureDefinition/ServiceRequest-eu-lab"					
 					
 * group[=].element[+].code = #Payer.insurance					
 * group[=].element[=].display = "A.1.3.1 Health insurance information"					
